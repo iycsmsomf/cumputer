@@ -1,0 +1,16 @@
+
+1)for ROM in control section-
+
+bit		function	
+bit 7 	 	RegWrite    (1 = write result to register file)
+bit 6 	 	ALUSrc      (1 = use immediate, 0 = use rs2)
+bit 5 		MemRead     (1 = read from RAM)
+bit 4   	MemWrite    (1 = write to RAM)
+bit 3   	Branch      (1 = this is a branch)
+bit 2   	Jump        (1 = this is a jump)
+bit 1   	WBSel1      (writeback mux select bit 1)
+bit 0   	WBSel0      (writeback mux select bit 0)
+
+
+
+	
