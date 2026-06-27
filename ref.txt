@@ -1,4 +1,4 @@
-
+RV32I
 1)for ROM in control section-
 
 bit		function	

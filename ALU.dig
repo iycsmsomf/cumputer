@@ -29,7 +29,7 @@
           <int>32</int>
         </entry>
       </elementAttributes>
-      <pos x="-480" y="240"/>
+      <pos x="-520" y="240"/>
     </visualElement>
     <visualElement>
       <elementName>Add</elementName>
@@ -1252,7 +1252,7 @@
       <p2 x="1940" y="240"/>
     </wire>
     <wire>
-      <p1 x="-480" y="240"/>
+      <p1 x="-520" y="240"/>
       <p2 x="20" y="240"/>
     </wire>
     <wire>
