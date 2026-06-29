@@ -215,7 +215,17 @@
     <visualElement>
       <elementName>flags.dig</elementName>
       <elementAttributes/>
-      <pos x="520" y="420"/>
+      <pos x="560" y="440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>JAL.dig</elementName>
+      <elementAttributes/>
+      <pos x="300" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>branch.dig</elementName>
+      <elementAttributes/>
+      <pos x="480" y="300"/>
     </visualElement>
   </visualElements>
   <wires>

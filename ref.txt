@@ -12,5 +12,50 @@ bit 1   	WBSel1      (writeback mux select bit 1)
 bit 0   	WBSel0      (writeback mux select bit 0)
 
 
+other control section outputs
 
+is_add - whether its addition
+j_type - 0=JAL, 1=JALR (goes into sel of jump.dig)
+
+--------------------------------------------------------------------------------------------
+
+
+
+BRANCH funct3 mux
+
+slot 000 → Z          (BEQ)
+slot 001 → NOT Z      (BNE)
+slot 010 → 0          (unused)
+slot 011 → 0          (unused)
+slot 100 → N XOR V    (BLT)
+slot 101 → NOT(N XOR V) (BGE)
+slot 110 → NOT C      (BLTU)
+slot 111 → C          (BGEU)
 	
+--------------------------------------------------------------------------------------------
+	
+rs1 ──────────────────────────────► ALU
+rs2 ──────────────────────────────► ALU
+                                     │
+                              Z,N,C,V flags
+                                     │
+funct3 ──────────────────────► Branch Evaluator
+Branch ──────────────────────► Branch Evaluator
+                                     │
+                               take_branch
+                                     │
+                               PCSel logic ◄── Jump, JumpType
+                                     │
+                                  PCSel
+                                     │
+PC+4 ────────────────────────► PC MUX slot 00
+branch_target ───────────────► PC MUX slot 01
+ALU result ──────────────────► PC MUX slot 10
+PC+J_imm ────────────────────► PC MUX slot 11
+                                     │
+                                  next_PC
+                                     │
+                               PC Register ◄── PCWrite, CLK
+                                     │
+                                    PC
+------------------------------------------------------------------------------------------------

@@ -474,72 +474,6 @@
       <pos x="-760" y="220"/>
     </visualElement>
     <visualElement>
-      <elementName>Splitter</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Input Splitting</string>
-          <string>1,1,1</string>
-        </entry>
-        <entry>
-          <string>Output Splitting</string>
-          <string>3</string>
-        </entry>
-      </elementAttributes>
-      <pos x="-780" y="400"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>12</string>
-        </entry>
-      </elementAttributes>
-      <pos x="-780" y="400"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>13</string>
-        </entry>
-      </elementAttributes>
-      <pos x="-780" y="420"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>NetName</string>
-          <string>14</string>
-        </entry>
-      </elementAttributes>
-      <pos x="-780" y="440"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Tunnel</elementName>
-      <elementAttributes>
-        <entry>
-          <string>NetName</string>
-          <string>funct3</string>
-        </entry>
-      </elementAttributes>
-      <pos x="-760" y="400"/>
-    </visualElement>
-    <visualElement>
       <elementName>Out</elementName>
       <elementAttributes>
         <entry>
@@ -1055,12 +989,12 @@
           <long>66</long>
         </entry>
         <entry>
-          <string>intFormat</string>
-          <intFormat>dec</intFormat>
-        </entry>
-        <entry>
           <string>Bits</string>
           <int>8</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
         </entry>
       </elementAttributes>
       <pos x="-740" y="640"/>
@@ -1118,6 +1052,30 @@
         </entry>
       </elementAttributes>
       <pos x="260" y="-300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>30</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-800" y="860"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>alu_sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-720" y="860"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -1200,6 +1158,10 @@
     <wire>
       <p1 x="580" y="-280"/>
       <p2 x="720" y="-280"/>
+    </wire>
+    <wire>
+      <p1 x="-800" y="860"/>
+      <p2 x="-720" y="860"/>
     </wire>
     <wire>
       <p1 x="-260" y="160"/>
